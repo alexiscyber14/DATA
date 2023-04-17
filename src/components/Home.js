@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCompanies } from '../redux/logic/companySlice';
@@ -6,12 +6,21 @@ import '../App.css';
 import Globe from '../globe.jpg';
 
 const CompanyList = () => {
-  const companies = useSelector((state) => state.companies);
+  const [filterText, setFilterText] = useState('');
+  const companies = useSelector(
+    (state) => state.companies.filter(
+      (company) => company.name.toLowerCase().includes(filterText.toLowerCase()),
+    ),
+  );
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchCompanies());
   }, [dispatch]);
+
+  const handleFilterTextChange = (event) => {
+    setFilterText(event.target.value);
+  };
 
   return (
     <div className="homeContainer">
@@ -25,6 +34,11 @@ const CompanyList = () => {
         </div>
       </div>
       <div>
+        <div className="filter">
+          <div className="filter-container">
+            <input type="text" placeholder="Filter by name" value={filterText} onChange={handleFilterTextChange} />
+          </div>
+        </div>
         <div className="content">
           {companies.map((company) => (
             <NavLink to={`details/${company.name}`} className="listItem" key={company.id}>

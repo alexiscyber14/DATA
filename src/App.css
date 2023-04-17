@@ -180,6 +180,20 @@ header nav ul .routing i {
   border: 1px solid white;
   font-weight: bold;
 }
+.homeContainer .filter{
+padding: 5%;
+background-color: white;
+}
+.homeContainer .filter .filter-container{
+background-color: white;
+}
+.homeContainer .filter .filter-container input{
+  width: 80%;
+  border: 2px solid grey;
+  padding: 1%;
+  box-shadow: 2px 2px 8px grey;
+  border-radius: 3px;
+}
 
 @media only screen and (min-width: 600px) {
   .homeContainer .intro h1 {
@@ -191,7 +205,13 @@ header nav ul .routing i {
     margin-bottom: 20%;
     text-align: right;
   }
-
+  .homeContainer .filter .filter-container input{
+    width: 80%;
+    border: 2px solid grey;
+    padding: 1%;
+    box-shadow: 2px 2px 8px grey;
+    border-radius: 3px;
+  }
   .homeContainer .intro h1 .title {
     font-size: 100px;
     color: rgb(255, 255, 255);
@@ -235,7 +255,13 @@ header nav ul .routing i {
     flex-direction: row;
     align-items: self-start;
   }
-
+  .homeContainer .filter .filter-container input{
+    width: 60%;
+    border: 2px solid grey;
+    padding: 1%;
+    box-shadow: 2px 2px 8px grey;
+    border-radius: 3px;
+  }
   header nav ul {
     width: 100%;
     padding: 0% 0%;
