@@ -68,5 +68,4 @@ const Details = () => {
     </div>
   );
 };
-module.exports=fetchData;
 export default Details;
