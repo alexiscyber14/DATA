@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f822271.css",
+    "main.js": "/static/js/main.64aafc81.js",
+    "static/media/globe.jpg": "/static/media/globe.ce8954492ea926688b7e.jpg",
+    "static/media/banner3.jpg": "/static/media/banner3.4a4281a08f99701cc3d4.jpg",
+    "index.html": "/index.html",
+    "main.6f822271.css.map": "/static/css/main.6f822271.css.map",
+    "main.64aafc81.js.map": "/static/js/main.64aafc81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f822271.css",
+    "static/js/main.64aafc81.js"
+  ]
+}
