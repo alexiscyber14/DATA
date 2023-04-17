@@ -11,11 +11,11 @@ const Details = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true); // set loading state to true while fetching data
+      setIsLoading(true);
       const response = await fetch(`http://588fc30f7458d612002df0d2.mockapi.io/api/v1/companies?filter=${companyName}`);
       const data = await response.json();
       setCompany(data);
-      setIsLoading(false); // set loading state to false after data has been fetched
+      setIsLoading(false);
     };
     fetchData();
   }, [companyName]);
@@ -24,7 +24,7 @@ const Details = () => {
     <div className="homeContainer">
       <Header />
       {isLoading ? (
-        <p className="load">Loading...</p> // show loading indicator if data is being fetched
+        <p className="load">Loading...</p>
       ) : (
         company.map((company) => (
           <div key={company.id} className="content2">

@@ -39,7 +39,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-**Link to online version of  my SPACE project**
+**Link to online version of  my data project**
 <a href="https://dataaapi.onrender.com/">Visit site here</a>
 
 <a href="https://www.loom.com/share/ca2fd9175c1942d6a38a2b40a5f92142">Watch me explain how the app works</a>
