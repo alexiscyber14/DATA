@@ -20,16 +20,11 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="logo-container" />
-        <div>
-          <ul>
-            <li>
-              <NavLink to="/" className={`routing ${activeIndex === 0 ? 'activated' : ''}`} onClick={(e) => handleClick(0, e)}>
-                back
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <NavLink to="/" className={`routing ${activeIndex === 0 ? 'activated' : ''}`} onClick={(e) => handleClick(0, e)}>
+            <i className="fa fa-angle-left" />
+          </NavLink>
+        </ul>
       </nav>
     </header>
 

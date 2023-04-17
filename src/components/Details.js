@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import '../App.css';
+import Header from './Header';
 
 const Details = () => {
   const [company, setCompany] = useState([]);
@@ -16,12 +18,46 @@ const Details = () => {
   }, [companyName]);
 
   return (
-    <div>
-      <h1>List of Companies</h1>
+    <div className="homeContainer">
+      <Header />
       {company.map((company) => (
-        <div key={company.id}>
-          <h2>{company.name}</h2>
-          <h2>{company.rank}</h2>
+        <div key={company.id} className="content2">
+          <div className="companyName">
+            <h2>{company.name}</h2>
+            <p className="box">
+              Fortune 100..
+              <span>{company.name}</span>
+              ..stats
+            </p>
+          </div>
+          <div className="details">
+            <p>
+              <span>Fortune 100 Rank:</span>
+              <span>
+                {company.rank}
+              </span>
+            </p>
+            <p>
+              <span>Year:</span>
+              <span>{company.year}</span>
+            </p>
+            <p>
+              <span>Revenue:</span>
+              <span>
+                $
+                {company.revenue}
+                M
+              </span>
+            </p>
+            <p>
+              <span>Profits:</span>
+              <span>
+                $
+                {company.profit}
+                M
+              </span>
+            </p>
+          </div>
         </div>
       ))}
     </div>
