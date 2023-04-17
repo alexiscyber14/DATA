@@ -80,7 +80,9 @@ header nav ul .routing i {
   margin-bottom: 15%;
   text-align: right;
 }
-
+.load{
+  color:white;
+}
 .homeContainer .intro h1 .title {
   font-size: 40px;
   color: rgb(255, 255, 255);
