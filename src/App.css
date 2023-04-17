@@ -184,11 +184,15 @@ header nav ul .routing i {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 15% 0%;
+  padding: 5% 0%;
   font-size: 25px;
   color: white;
   border: 1px solid white;
   font-weight: bold;
+}
+
+.details p:nth-child(odd) {
+  background-color: rgba(7, 119, 128, 0.76);
 }
 
 .homeContainer .filter {
