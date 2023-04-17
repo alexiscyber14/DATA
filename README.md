@@ -42,6 +42,7 @@
 **Link to online version of  my SPACE project**
 <a href="https://dataaapi.onrender.com/">Visit site here</a>
 
+<a href="https://www.loom.com/share/ca2fd9175c1942d6a38a2b40a5f92142">Watch me splain how the app works</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
