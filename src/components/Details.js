@@ -12,7 +12,7 @@ const Details = () => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const response = await fetch(`http://588fc30f7458d612002df0d2.mockapi.io/api/v1/companies?filter=${companyName}`);
+      const response = await fetch(`https://588fc30f7458d612002df0d2.mockapi.io/api/v1/companies?filter=${companyName}`);
       const data = await response.json();
       setCompany(data);
       setIsLoading(false);
