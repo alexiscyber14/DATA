@@ -90,6 +90,7 @@ If you like this project you can give it a ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 I would like to thank <a href="https://www.microverse.org/">MICROVERSE</a> for their contribution to the material used in this project.
+I would like to thank <a href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa</a> for their contribution to the material used in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
