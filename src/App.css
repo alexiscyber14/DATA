@@ -51,6 +51,8 @@ header nav ul .routing i {
 
 .homeContainer {
   background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  margin: 0;
 }
 
 .homeContainer .intro {
@@ -110,13 +112,17 @@ header nav ul .routing i {
   border: 1px solid rgb(231, 224, 224);
   text-decoration: none;
   display: flex;
-  background-color: rgba(0, 238, 255, 0.76); /* rgba(15, 245, 168, 0.815); */
   color: white;
+  background-color: rgba(11, 183, 196, 0.815);
   padding: 10px;
   font-family: 'Poppins', sans-serif;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
+
+.homeContainer .content .listItem:nth-child(even) {
+  background-color: rgba(8, 121, 129, 0.815);
 }
 
 .homeContainer .content .listItem:hover {
@@ -126,7 +132,7 @@ header nav ul .routing i {
 .homeContainer .content .listItem .title {
   font-weight: bold;
   margin: 0;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .homeContainer .content .listItem .money {
